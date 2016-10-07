@@ -1,0 +1,23 @@
+import tensorflow as tf
+from tensorflow.models.rnn import rnn, rnn_cell
+import numpy as np
+
+class Stock(object):
+	
+	def __init__(self, tr, te, size):
+		# set input data and size
+		self.tr = tr
+		self.te = te
+		self.size = size
+		
+		
+
+	def Lstm(self):
+		# define placeholder
+		input_placeholder = tf.placeholder(tf.float32, shape=[None, n_step, \
+			n_input], name='indat')
+
+		# define weights
+		
+		lstm_cell = rnn_cell.BasicLSMTCell(size				
+		
